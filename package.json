@@ -1,0 +1,31 @@
+{
+  "name": "typescript-tip-of-the-week",
+  "version": "1.0.0",
+  "description": "TypeScript-Tip-of-the-Week",
+  "main": "dist/index.ts",
+  "scripts": {
+    "lint": "node_modules/.bin/tslint --project tsconfig.json",
+    "build": "npm run lint && tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadow1349/TypeScript-Tip-of-the-Week.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Sam Redmond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadow1349/TypeScript-Tip-of-the-Week/issues"
+  },
+  "homepage": "https://github.com/shadow1349/TypeScript-Tip-of-the-Week#readme",
+  "devDependencies": {
+    "@types/node": "^13.1.8",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  }
+}
